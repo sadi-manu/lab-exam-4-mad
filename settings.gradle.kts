@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Task management System"
+rootProject.name = "LabExam04"
 include(":app")
  

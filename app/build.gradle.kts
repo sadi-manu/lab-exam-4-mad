@@ -1,15 +1,14 @@
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
-    id("kotlin-parcelize")
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
 android {
-    namespace = "com.example.taskmanagementsystem"
+    namespace = "com.example.labexam04"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.taskmanagementsystem"
+        applicationId = "com.example.labexam04"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -34,11 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    // Enable View Binding
-    viewBinding.isEnabled = true
 }
 
 dependencies {
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
